@@ -1,0 +1,374 @@
+<!-- =========================
+FILE: join.html
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BVK Membership</title>
+
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="join.css">
+
+</head>
+
+<body>
+
+
+
+
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header class="navbar">
+
+    <div class="logo">
+      BVK
+    </div>
+
+
+    <a href="index.html" class="back-btn">
+      ← BACK HOME
+    </a>
+
+  </header>
+
+
+
+
+
+
+
+  <!-- ================= MAIN ================= -->
+
+  <section class="join-container">
+
+
+
+
+
+    <!-- ================= FORM ================= -->
+
+    <div class="form-section">
+
+      <span class="mini-tag">
+        OFFICIAL MEMBERSHIP
+      </span>
+
+
+      <h1>
+        JOIN <span>BVK</span>
+      </h1>
+
+
+
+
+
+      <!-- PHOTO -->
+
+      <label>
+        Upload Photo
+      </label>
+
+      <input 
+        type="file"
+        id="photoInput"
+        accept="image/*"
+      >
+
+
+
+
+
+      <!-- NAME -->
+
+      <label>
+        Full Name
+      </label>
+
+      <input 
+        type="text"
+        id="nameInput"
+        placeholder="Enter your name"
+      >
+
+
+
+
+
+      <!-- AGE -->
+
+      <label>
+        Age
+      </label>
+
+      <input 
+        type="number"
+        id="ageInput"
+        placeholder="Enter age"
+      >
+
+
+
+
+
+      <!-- DOB -->
+
+      <label>
+        Date Of Birth
+      </label>
+
+      <input 
+        type="date"
+        id="dobInput"
+      >
+
+
+
+
+
+      <!-- TALUK -->
+
+      <label>
+        Taluk
+      </label>
+
+      <input 
+        type="text"
+        id="talukInput"
+        placeholder="Enter taluk"
+      >
+
+
+
+
+
+      <!-- BUTTON -->
+
+      <button id="generateBtn">
+
+        GENERATE MEMBER CARD
+
+      </button>
+
+
+
+
+
+      <!-- SUCCESS -->
+
+      <div class="success-box" id="successBox">
+
+        <h3>
+          Successfully Joined BVK 🎉
+        </h3>
+
+        <p id="successText"></p>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- ================= CARD ================= -->
+
+    <div class="card-wrapper">
+
+      <div class="member-card" id="memberCard">
+
+
+
+        <!-- BACKGROUND -->
+
+        <img 
+          src="Assets/Images/membercardbg.png"
+          class="card-bg"
+        >
+
+
+
+
+
+        <!-- PARTY -->
+
+        <div class="party-name">
+          BVK
+        </div>
+
+
+        <div class="party-sub">
+          BHEEMAK VETTRI KAZHAGAM
+        </div>
+
+
+
+
+
+        <!-- PHOTO -->
+
+        <div class="profile-circle">
+
+          <img 
+            src="Assets/Images/defaultuser.png"
+            id="profileImage"
+          >
+
+        </div>
+
+
+
+
+
+
+        <!-- NAME -->
+
+        <div class="card-name" id="cardName">
+
+          YOUR NAME
+
+        </div>
+
+
+
+
+
+
+
+        <!-- DETAILS -->
+
+        <div class="details-section">
+
+
+          <div class="detail-row">
+
+            <span>AGE</span>
+
+            <p id="cardAge">--</p>
+
+          </div>
+
+
+
+
+          <div class="detail-row">
+
+            <span>DATE OF BIRTH</span>
+
+            <p id="cardDob">--</p>
+
+          </div>
+
+
+
+
+
+          <div class="detail-row">
+
+            <span>LOCATION</span>
+
+            <p id="cardTaluk">--</p>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- POSITION -->
+
+        <div class="position-box">
+
+          <span>
+            POSITION
+          </span>
+
+          <h2>
+            MLA
+          </h2>
+
+          <p id="positionTaluk">
+
+            TALUK
+
+          </p>
+
+        </div>
+
+
+
+
+
+
+        <!-- MEMBER ID -->
+
+        <div class="member-id">
+
+          MEMBER ID :
+          <span id="memberId">
+            BVK-0001
+          </span>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <!-- DOWNLOAD -->
+
+      <button id="downloadBtn">
+
+        DOWNLOAD MEMBER CARD
+
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <!-- html2canvas -->
+
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+  <!-- JS -->
+
+  <script src="join.js"></script>
+
+</body>
+
+</html>
