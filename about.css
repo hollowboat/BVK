@@ -1,0 +1,525 @@
+/* =========================
+FILE: about.css
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#f6f0e8;
+  font-family:'Inter',sans-serif;
+  color:#111;
+  overflow-x:hidden;
+}
+
+:root{
+  --gold:#c89b3c;
+}
+
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+  width:100%;
+
+  padding:24px 6vw;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  flex-wrap:wrap;
+  gap:20px;
+
+}
+
+.logo{
+
+  font-family:'Bebas Neue';
+  font-size:4rem;
+
+  color:var(--gold);
+
+}
+
+.nav-links{
+
+  display:flex;
+  gap:28px;
+
+  flex-wrap:wrap;
+
+}
+
+.nav-links a{
+
+  text-decoration:none;
+  color:#111;
+
+  font-size:0.9rem;
+  font-weight:600;
+
+  position:relative;
+
+}
+
+.nav-links a.active::after{
+
+  content:'';
+
+  position:absolute;
+
+  left:0;
+  bottom:-8px;
+
+  width:100%;
+  height:2px;
+
+  background:var(--gold);
+
+}
+
+
+
+/* ================= NAV RIGHT ================= */
+
+.nav-right{
+
+  display:flex;
+  align-items:center;
+
+  gap:18px;
+
+}
+
+
+
+/* ================= INSTAGRAM ================= */
+
+.instagram-link{
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.instagram-link img{
+
+  width:24px;
+  height:24px;
+
+  transition:0.3s;
+
+}
+
+.instagram-link:hover img{
+
+  transform:scale(1.12);
+  opacity:0.7;
+
+}
+
+
+
+/* ================= JOIN BUTTON ================= */
+
+.join-btn{
+
+  text-decoration:none;
+
+  background:var(--gold);
+  color:#111;
+
+  padding:14px 24px;
+
+  font-size:0.85rem;
+  font-weight:700;
+
+}
+
+
+
+
+
+/* ================= HERO ================= */
+
+.about-hero{
+
+  width:100%;
+
+  min-height:85vh;
+
+  padding:0 6vw;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:60px;
+
+}
+
+.about-left{
+
+  width:45%;
+
+}
+
+.mini-tag{
+
+  color:var(--gold);
+
+  font-size:0.95rem;
+  font-weight:700;
+
+}
+
+.about-left h1{
+
+  font-family:'Bebas Neue';
+
+  font-size:7rem;
+  line-height:0.9;
+
+  margin-top:20px;
+
+}
+
+.about-left h1 span{
+  color:var(--gold);
+}
+
+.about-left p{
+
+  margin-top:28px;
+
+  font-size:1.2rem;
+  line-height:1.8;
+
+  color:#444;
+
+}
+
+.about-buttons{
+
+  display:flex;
+  gap:20px;
+
+  flex-wrap:wrap;
+
+  margin-top:40px;
+
+}
+
+.gold-btn{
+
+  text-decoration:none;
+
+  background:var(--gold);
+  color:#111;
+
+  padding:18px 28px;
+
+  font-weight:700;
+
+}
+
+.outline-btn{
+
+  text-decoration:none;
+
+  border:2px solid #111;
+  color:#111;
+
+  padding:18px 28px;
+
+  font-weight:700;
+
+}
+
+.about-right{
+
+  width:48%;
+
+  display:flex;
+  justify-content:center;
+
+}
+
+.about-right img{
+
+  width:100%;
+  max-width:650px;
+
+}
+
+
+
+
+
+/* ================= STUDIO ================= */
+
+.studio-section{
+
+  padding:40px 6vw 100px;
+
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+
+  gap:30px;
+
+}
+
+.studio-card{
+
+  background:white;
+
+  border:1px solid #ead9bf;
+  border-radius:24px;
+
+  padding:50px 35px;
+
+  text-align:center;
+
+}
+
+.studio-card img{
+
+  width:42px;
+
+  margin-bottom:24px;
+
+}
+
+.studio-card h3{
+
+  font-size:1.4rem;
+
+  margin-bottom:18px;
+
+}
+
+.studio-card p{
+
+  line-height:1.8;
+  color:#555;
+
+}
+
+
+
+
+
+/* ================= QUOTE ================= */
+
+.quote-section{
+
+  padding:0 6vw 100px;
+
+}
+
+.quote-box{
+
+  background:#111;
+
+  border-radius:28px;
+
+  padding:80px 40px;
+
+  text-align:center;
+
+  color:white;
+
+}
+
+.quote-box span{
+
+  font-size:5rem;
+
+  color:var(--gold);
+
+}
+
+.quote-box p{
+
+  font-size:2rem;
+  line-height:1.7;
+
+}
+
+.quote-box h3{
+
+  margin-top:25px;
+
+  color:var(--gold);
+
+  font-size:1.5rem;
+
+}
+
+
+
+
+
+/* ================= CONTACT ================= */
+
+.contact-section{
+
+  padding:0 6vw 100px;
+
+  text-align:center;
+
+}
+
+.contact-section h2{
+
+  font-family:'Bebas Neue';
+
+  font-size:4rem;
+
+  margin-bottom:40px;
+
+}
+
+.contact-links{
+
+  display:flex;
+  justify-content:center;
+
+  gap:30px;
+
+  flex-wrap:wrap;
+
+}
+
+.contact-links a{
+
+  background:white;
+
+  border:1px solid #ead9bf;
+  border-radius:20px;
+
+  padding:24px 32px;
+
+  display:flex;
+  align-items:center;
+
+  gap:18px;
+
+  text-decoration:none;
+  color:#111;
+
+}
+
+.contact-links img{
+
+  width:28px;
+
+}
+
+
+
+
+
+/* ================= NEXT PAGE ================= */
+
+.next-page{
+
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+
+  padding-bottom:80px;
+
+}
+
+.next-page a{
+
+  text-decoration:none;
+
+  background:#111;
+  color:white;
+
+  padding:20px 36px;
+
+  font-weight:700;
+
+}
+
+
+
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:1100px){
+
+  .about-hero{
+
+    flex-direction:column;
+
+    padding-top:40px;
+
+  }
+
+  .about-left,
+  .about-right{
+
+    width:100%;
+
+  }
+
+  .studio-section{
+
+    grid-template-columns:1fr;
+
+  }
+
+}
+
+
+
+
+
+/* ================= PHONE ================= */
+
+@media(max-width:768px){
+
+  .navbar{
+
+    flex-direction:column;
+
+  }
+
+  .about-left h1{
+
+    font-size:4.8rem;
+
+  }
+
+  .contact-section h2{
+
+    font-size:3rem;
+
+  }
+
+  .quote-box{
+
+    padding:60px 24px;
+
+  }
+
+  .quote-box p{
+
+    font-size:1.3rem;
+
+  }
+
+}
