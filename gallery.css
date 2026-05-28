@@ -1,0 +1,350 @@
+/* =========================
+FILE: gallery.css
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#f6f0e8;
+  font-family:'Inter',sans-serif;
+  color:#111;
+  overflow-x:hidden;
+}
+
+:root{
+  --gold:#c89b3c;
+}
+
+
+
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+  width:100%;
+
+  padding:24px 6vw;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  flex-wrap:wrap;
+  gap:20px;
+
+}
+
+.logo{
+
+  font-family:'Bebas Neue';
+  font-size:4rem;
+
+  color:var(--gold);
+
+}
+
+.nav-links{
+
+  display:flex;
+  gap:28px;
+
+  flex-wrap:wrap;
+
+}
+
+.nav-links a{
+
+  text-decoration:none;
+  color:#111;
+
+  font-size:0.9rem;
+  font-weight:600;
+
+  position:relative;
+
+}
+
+.nav-links a.active::after{
+
+  content:'';
+
+  position:absolute;
+
+  left:0;
+  bottom:-8px;
+
+  width:100%;
+  height:2px;
+
+  background:var(--gold);
+
+}
+
+.nav-right{
+
+  display:flex;
+  align-items:center;
+
+  gap:20px;
+
+}
+
+.insta-link img{
+
+  width:24px;
+
+}
+
+.join-btn{
+
+  text-decoration:none;
+
+  background:var(--gold);
+  color:#111;
+
+  padding:14px 24px;
+
+  font-size:0.85rem;
+  font-weight:700;
+
+}
+
+
+
+
+
+/* ================= HERO ================= */
+
+.gallery-hero{
+
+  padding:80px 6vw 50px;
+
+}
+
+.breadcrumb{
+
+  color:var(--gold);
+
+  font-size:0.95rem;
+  font-weight:600;
+
+}
+
+.gallery-hero h1{
+
+  font-family:'Bebas Neue';
+
+  font-size:9rem;
+  line-height:0.9;
+
+  margin-top:25px;
+
+}
+
+.hero-line{
+
+  width:70px;
+  height:3px;
+
+  background:var(--gold);
+
+  margin:35px 0;
+
+}
+
+.gallery-hero h3{
+
+  color:var(--gold);
+
+  font-size:1.6rem;
+
+}
+
+.gallery-hero p{
+
+  margin-top:30px;
+
+  font-size:1.4rem;
+  line-height:1.7;
+
+}
+
+
+
+
+
+/* ================= GALLERY GRID ================= */
+
+.gallery-grid{
+
+  padding:0 4vw 100px;
+
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+
+  gap:18px;
+
+}
+
+.gallery-item{
+
+  overflow:hidden;
+
+}
+
+.gallery-item img{
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  border-radius:18px;
+
+  transition:0.4s;
+
+}
+
+.gallery-item:hover img{
+
+  transform:scale(1.03);
+
+}
+
+.gallery-item h3{
+
+  margin-top:12px;
+
+  font-size:1.2rem;
+
+}
+
+.large{
+
+  grid-column:span 2;
+  grid-row:span 2;
+
+}
+
+
+
+
+
+/* ================= FOOTER NAV ================= */
+
+.page-nav{
+
+  margin:0 4vw 80px;
+
+  padding:40px;
+
+  border:1px solid #ead9bf;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:30px;
+
+}
+
+.prev-btn,
+.next-btn{
+
+  text-decoration:none;
+
+  padding:18px 32px;
+
+  font-weight:700;
+
+}
+
+.prev-btn{
+
+  border:2px solid #111;
+  color:#111;
+
+}
+
+.next-btn{
+
+  background:var(--gold);
+  color:#111;
+
+}
+
+.page-nav p{
+
+  font-size:1.2rem;
+  text-align:center;
+
+}
+
+
+
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:1100px){
+
+  .gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+  }
+
+}
+
+
+
+
+
+/* ================= PHONE ================= */
+
+@media(max-width:768px){
+
+  .navbar{
+
+    flex-direction:column;
+
+  }
+
+  .gallery-hero h1{
+
+    font-size:5rem;
+
+  }
+
+  .gallery-hero p{
+
+    font-size:1.1rem;
+
+  }
+
+  .gallery-grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .large{
+
+    grid-column:span 1;
+    grid-row:span 1;
+
+  }
+
+  .page-nav{
+
+    flex-direction:column;
+
+  }
+
+}

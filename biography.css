@@ -1,0 +1,646 @@
+/* =========================
+FILE: biography.css
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#f6f0e8;
+  font-family:'Inter',sans-serif;
+  color:#111;
+  overflow-x:hidden;
+}
+
+:root{
+  --gold:#c89b3c;
+}
+
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+  width:100%;
+
+  padding:24px 6vw;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  flex-wrap:wrap;
+  gap:20px;
+
+}
+
+.logo{
+
+  font-family:'Bebas Neue';
+  font-size:4rem;
+
+  color:var(--gold);
+
+}
+
+.nav-links{
+
+  display:flex;
+  gap:28px;
+
+  flex-wrap:wrap;
+
+}
+
+.nav-links a{
+
+  text-decoration:none;
+  color:#111;
+
+  font-size:0.9rem;
+  font-weight:600;
+
+  position:relative;
+
+}
+
+.nav-links a.active::after{
+
+  content:'';
+
+  position:absolute;
+
+  left:0;
+  bottom:-8px;
+
+  width:100%;
+  height:2px;
+
+  background:var(--gold);
+
+}
+
+
+
+/* ================= NAV RIGHT ================= */
+
+.nav-right{
+
+  display:flex;
+  align-items:center;
+
+  gap:18px;
+
+}
+
+
+
+/* ================= INSTAGRAM ================= */
+
+.instagram-link{
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.instagram-link img{
+
+  width:24px;
+  height:24px;
+
+  transition:0.3s;
+
+}
+
+.instagram-link:hover img{
+
+  transform:scale(1.12);
+  opacity:0.7;
+
+}
+
+
+
+/* ================= JOIN BUTTON ================= */
+
+.join-btn{
+
+  text-decoration:none;
+
+  background:var(--gold);
+  color:#111;
+
+  padding:14px 24px;
+
+  font-size:0.85rem;
+  font-weight:700;
+
+}
+
+
+
+
+
+/* ================= HERO ================= */
+
+.bio-hero{
+
+  width:100%;
+
+  min-height:85vh;
+
+  padding:0 6vw;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:50px;
+
+}
+
+.bio-left{
+
+  width:45%;
+
+}
+
+.breadcrumb{
+
+  color:var(--gold);
+
+  font-size:0.95rem;
+  font-weight:600;
+
+}
+
+.bio-left h1{
+
+  font-family:'Bebas Neue';
+
+  font-size:7rem;
+  line-height:0.9;
+
+  margin-top:25px;
+
+}
+
+.bio-left h1 span{
+  color:var(--gold);
+}
+
+.bio-left h3{
+
+  margin-top:25px;
+
+  color:var(--gold);
+
+  font-size:1.4rem;
+  font-weight:700;
+
+}
+
+.mini-story{
+
+  margin-top:40px;
+
+  display:flex;
+  align-items:center;
+
+  gap:20px;
+
+}
+
+.mini-story img{
+
+  width:42px;
+
+}
+
+.mini-story p{
+
+  font-size:1.4rem;
+  line-height:1.5;
+
+}
+
+.gold-btn{
+
+  display:inline-block;
+
+  margin-top:40px;
+
+  text-decoration:none;
+
+  background:var(--gold);
+  color:#111;
+
+  padding:18px 28px;
+
+  font-weight:700;
+
+}
+
+.bio-right{
+
+  width:50%;
+
+}
+
+.bio-right img{
+
+  width:100%;
+
+}
+
+
+
+
+
+/* ================= TIMELINE ================= */
+
+.timeline-section{
+
+  padding:120px 6vw;
+
+  text-align:center;
+
+  position:relative;
+
+}
+
+.timeline-section h2{
+
+  color:var(--gold);
+
+  font-size:2rem;
+
+  margin-bottom:80px;
+
+}
+
+.timeline-line{
+
+  position:absolute;
+
+  top:240px;
+  left:8vw;
+  right:8vw;
+
+  height:2px;
+
+  background:var(--gold);
+
+}
+
+.timeline-grid{
+
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+
+  gap:30px;
+
+  position:relative;
+  z-index:2;
+
+}
+
+.timeline-item{
+
+  background:#f6f0e8;
+
+}
+
+.icon-circle{
+
+  width:90px;
+  height:90px;
+
+  margin:auto;
+  margin-bottom:25px;
+
+  border-radius:50%;
+
+  background:white;
+
+  border:2px solid #ead9bf;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+
+.icon-circle img{
+
+  width:36px;
+
+}
+
+.timeline-item h3{
+
+  font-size:2rem;
+
+  margin-bottom:15px;
+
+}
+
+.timeline-item h4{
+
+  font-size:1.1rem;
+
+  margin-bottom:18px;
+
+}
+
+.timeline-item p{
+
+  line-height:1.8;
+  color:#555;
+
+}
+
+
+
+
+
+/* ================= VALUES ================= */
+
+.values-section{
+
+  padding:0 6vw 100px;
+
+  text-align:center;
+
+}
+
+.values-section h2{
+
+  color:var(--gold);
+
+  font-size:2rem;
+
+  margin-bottom:60px;
+
+}
+
+.values-grid{
+
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+
+  gap:25px;
+
+}
+
+.value-card{
+
+  background:white;
+
+  border-radius:18px;
+
+  padding:40px 25px;
+
+  border:1px solid #ead9bf;
+
+}
+
+.value-card img{
+
+  width:40px;
+
+  margin-bottom:20px;
+
+}
+
+.value-card h3{
+
+  margin-bottom:20px;
+
+}
+
+.value-card p{
+
+  line-height:1.8;
+  color:#555;
+
+}
+
+
+
+
+
+/* ================= QUOTE ================= */
+
+.quote-section{
+
+  padding:0 6vw 100px;
+
+}
+
+.quote-overlay{
+
+  background:
+  linear-gradient(rgba(0,0,0,0.82),rgba(0,0,0,0.82)),
+  url("Assets/Images/bvkbanner hollowboat.png");
+
+  background-size:cover;
+  background-position:center;
+
+  border-radius:24px;
+
+  padding:80px;
+
+  text-align:center;
+
+  color:white;
+
+}
+
+.quote-overlay span{
+
+  font-size:5rem;
+
+  color:var(--gold);
+
+}
+
+.quote-overlay p{
+
+  font-size:2rem;
+  line-height:1.8;
+
+}
+
+.quote-overlay h3{
+
+  margin-top:30px;
+
+  color:var(--gold);
+
+  font-size:2rem;
+
+}
+
+
+
+
+
+/* ================= PAGE NAV ================= */
+
+.page-nav{
+
+  padding:0 6vw 80px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:30px;
+
+}
+
+.prev-btn,
+.next-btn{
+
+  text-decoration:none;
+
+  padding:18px 32px;
+
+  font-weight:700;
+
+}
+
+.prev-btn{
+
+  border:2px solid #111;
+  color:#111;
+
+}
+
+.next-btn{
+
+  background:var(--gold);
+  color:#111;
+
+}
+
+.page-nav p{
+
+  font-size:1.2rem;
+  text-align:center;
+
+}
+
+
+
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:1200px){
+
+  .bio-hero{
+
+    flex-direction:column;
+
+    padding-top:40px;
+
+  }
+
+  .bio-left,
+  .bio-right{
+
+    width:100%;
+
+  }
+
+  .timeline-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+    row-gap:60px;
+
+  }
+
+  .values-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+  }
+
+}
+
+
+
+
+
+/* ================= PHONE ================= */
+
+@media(max-width:768px){
+
+  .navbar{
+
+    flex-direction:column;
+
+  }
+
+  .bio-left h1{
+
+    font-size:4.8rem;
+
+  }
+
+  .bio-left h3{
+
+    font-size:1.1rem;
+
+  }
+
+  .mini-story p{
+
+    font-size:1.1rem;
+
+  }
+
+  .timeline-grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .timeline-line{
+    display:none;
+  }
+
+  .values-grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .quote-overlay{
+
+    padding:50px 30px;
+
+  }
+
+  .quote-overlay p{
+
+    font-size:1.3rem;
+
+  }
+
+  .page-nav{
+
+    flex-direction:column;
+
+  }
+
+}
