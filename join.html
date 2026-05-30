@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join BVK</title>
+
+<link rel="stylesheet" href="join.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Join Bheemak Vettri Kazhagam</h1>
+
+    <div class="form-box">
+
+        <input type="file" id="photo" accept="image/*">
+
+        <input type="text" id="name" placeholder="Full Name">
+
+        <input type="number" id="age" placeholder="Age">
+
+        <input type="date" id="dob">
+
+        <input type="text" id="location" placeholder="Taluk">
+
+        <button onclick="generateCard()">
+            Generate Member Card
+        </button>
+
+    </div>
+
+    <div id="successBox" class="success-box"></div>
+
+    <div id="cardContainer">
+
+        <div id="memberCard">
+
+            <img
+                src="Assets/Images/membercard.png"
+                class="card-bg"
+            >
+
+            <img
+                id="userPhoto"
+                class="user-photo"
+            >
+
+            <div class="member-info">
+
+                <h2 id="cardName">NAME</h2>
+
+                <div class="info-row">
+                    <span>AGE</span>
+                    <span id="cardAge"></span>
+                </div>
+
+                <div class="info-row">
+                    <span>DATE OF BIRTH</span>
+                    <span id="cardDob"></span>
+                </div>
+
+                <div class="info-row">
+                    <span>LOCATION</span>
+                    <span id="cardLocation"></span>
+                </div>
+
+                <div class="info-row">
+                    <span>JOINING DATE</span>
+                    <span id="cardJoinDate"></span>
+                </div>
+
+                <div class="member-id">
+                    MEMBER ID :
+                    <span id="memberId"></span>
+                </div>
+
+                <div class="position-box">
+                    MLA OF
+                    <span id="positionLocation"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button id="downloadBtn" onclick="downloadCard()">
+            Download Member Card
+        </button>
+
+    </div>
+
+</div>
+
+<script src="join.js"></script>
+
+</body>
+</html>
